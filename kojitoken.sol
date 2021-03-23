@@ -114,8 +114,6 @@ contract KojiToken is Context, IERC20, Ownable {
     mapping(address => bool) private excludedFromRewards;
     address[] private rewardExcluded;
 
-    //dev reward wallets
-    //1% charity, 0.5% admin, 1% holders and 0.5% burn
     uint256 private constant MAX = ~uint256(0);
     uint256 private constant ACTUAL_TOTAL = 10000000 * 10**6 * 10**18;  //10 Trillion
     uint256 private rewardsTotal = (MAX - (MAX % ACTUAL_TOTAL));
@@ -124,6 +122,8 @@ contract KojiToken is Context, IERC20, Ownable {
     uint256 private burnFeeTotal;
     uint256 private adminFeeTotal;
 
+    //dev reward wallets
+    //1% charity, 0.5% admin, 1% holders and 0.5% burn
     uint256 public taxPercentage = 3;     //3% Total
     uint256 public holderTaxAlloc = 10;   //1%
     uint256 public charityTaxAlloc = 10;  //1%
