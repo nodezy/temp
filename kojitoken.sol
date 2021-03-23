@@ -117,18 +117,18 @@ contract KojiToken is Context, IERC20, Ownable {
     //dev reward wallets
     //1% charity, 0.5% admin, 1% holders and 0.5% burn
     uint256 private constant MAX = ~uint256(0);
-    uint256 private constant ACTUAL_TOTAL = 10000000 * 10**6 * 10**18;
+    uint256 private constant ACTUAL_TOTAL = 10000000 * 10**6 * 10**18;  //10 Trillion
     uint256 private rewardsTotal = (MAX - (MAX % ACTUAL_TOTAL));
     uint256 private holderFeeTotal;
     uint256 private charityFeeTotal;
     uint256 private burnFeeTotal;
     uint256 private adminFeeTotal;
 
-    uint256 public taxPercentage = 3;
-    uint256 public holderTaxAlloc = 10;
-    uint256 public charityTaxAlloc = 10;
-    uint256 public burnTaxAlloc = 5;
-    uint256 public adminTaxAlloc = 5;
+    uint256 public taxPercentage = 3;     //3% Total
+    uint256 public holderTaxAlloc = 10;   //1%
+    uint256 public charityTaxAlloc = 10;  //1%
+    uint256 public burnTaxAlloc = 5;      //.5%
+    uint256 public adminTaxAlloc = 5;     //.5%
     uint256 public totalTaxAlloc = charityTaxAlloc.add(holderTaxAlloc).add(charityTaxAlloc).add(burnTaxAlloc).add(adminTaxAlloc);
 
     address public charityAddress;
