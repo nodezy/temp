@@ -24,7 +24,8 @@ module.exports = async function(deployer, network, accounts)  {
 
  }
 
- var deploykoji = await deployer.deploy(KojiToken, "0x0CE636E0B5989EC758C7eC36EA03335fD4A5a5F7").then(myfunc); //charity address is set here, change this to a wallet you control on mainnet deployement!!!!
+ var deploykoji = await deployer.deploy(KojiToken, "0x0CE636E0B5989EC758C7eC36EA03335fD4A5a5F7").then(myfunc); //charity address is set here, 
+                                                                                                              // change this to a wallet you control on mainnet deployement!!!!
 
   } else {
     console.log(('Failed to deploy contract, wrong network'))
