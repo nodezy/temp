@@ -7,24 +7,24 @@ module.exports = async function(deployer, network, accounts)  {
   const myfunc = (event) => {
 
     event.setBurnAddress(                                                   //set burn address
-     "0xA8E30B574556e16Ab7073A3F707097105209561c"
+     "0xA8E30B574556e16Ab7073A3F707097105209561c"                           //change this to a wallet you control on mainnet deployement!!!!
    );
 
      event.excludeFromRewards(                                               //so burn address doesn't get 1% also for being a holder
-      "0xA8E30B574556e16Ab7073A3F707097105209561c"                                                              
+      "0xA8E30B574556e16Ab7073A3F707097105209561c"                           //change this to a wallet you control on mainnet deployement!!!!                                                              
     ); 
 
     event.setAdminAddress(                                                   //set admin address
-     "0xFC325852Cd8e13AE7fc7fc1209Bf87E0550f85f5"
+     "0xFC325852Cd8e13AE7fc7fc1209Bf87E0550f85f5"                            //change this to a wallet you control on mainnet deployement!!!! 
    );
 
     event.excludeFromRewards(                                               //so admin address doesn't get 1% also for being a holder
-      "0xFC325852Cd8e13AE7fc7fc1209Bf87E0550f85f5"                                                              
+      "0xFC325852Cd8e13AE7fc7fc1209Bf87E0550f85f5"                          //change this to a wallet you control on mainnet deployement!!!!                                    
     ); 
 
  }
 
- var deploykoji = await deployer.deploy(KojiToken, "0x0CE636E0B5989EC758C7eC36EA03335fD4A5a5F7").then(myfunc); //charity address is set here
+ var deploykoji = await deployer.deploy(KojiToken, "0x0CE636E0B5989EC758C7eC36EA03335fD4A5a5F7").then(myfunc); //charity address is set here, change this to a wallet you control on mainnet deployement!!!!
 
   } else {
     console.log(('Failed to deploy contract, wrong network'))
