@@ -102,8 +102,8 @@ contract KojiToken is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
-    string private constant NAME = "Koji";
-    string private constant SYMBOL = "Koji";
+    string private constant NAME = "KOJI";
+    string private constant SYMBOL = "KOJI";
     uint8 private constant DECIMALS = 18;
 
     mapping(address => uint256) private rewards;
