@@ -115,7 +115,7 @@ contract KojiToken is Context, IERC20, Ownable {
     address[] private rewardExcluded;
 
     uint256 private constant MAX = ~uint256(0);
-    uint256 private constant ACTUAL_TOTAL = 10000000 * 10**6 * 10**18;  //10 Trillion
+    uint256 private constant ACTUAL_TOTAL = 1000000 * 10**6 * 10**18;  //1 Trillion
     uint256 private rewardsTotal = (MAX - (MAX % ACTUAL_TOTAL));
     uint256 private holderFeeTotal;
     uint256 private charityFeeTotal;
