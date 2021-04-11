@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/tltqyr7.png">
+<img src="https://i.imgur.com/S6NFAlR.jpg">
 
 KOJI is the token of the people. It is a distributed, worldwide, decentralized
 digital token designed to help the population by giving back, donating to
@@ -38,5 +38,4 @@ Telegram: Kojiearth<br>
 Discord: https://discord.gg/anDmHJSB<br>
 Reddit: r/kojiearth<br>
 Fb: @thekojiearth<br>
-Telegram: https://www.reddit.com/r/kojicoin/
-
+Telegram: https://t.me/kojiearth
