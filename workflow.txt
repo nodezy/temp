@@ -1,0 +1,23 @@
+*Token Contract*
+Compile contract
+Double Check amounts for supply and taxes
+Double check wallet addresses
+Double check migrations for wallet rewards
+Migrate to appropriate network with constructor arguments
+
+*Crowdsale*
+Compile contract
+Migrate to appropriate network with constructor arguments
+Approve with node scripts/node_crowdsale
+Call allocateRemainingTokens() to retrieve unsold tokens
+
+Crowdsale Tests
+crowdsale contract can spend tokens from main wallet...OK
+Limit wallets to a default eth cap.....OK
+Limit total crowdsale to an eth cap....OK
+If crowdsale owns tokens, recall tokens back...OK
+
+*Uniswap LP*
+Add liquidity pair to Uniswap
+Verify buy/sell
+Verify taxes to wallets
